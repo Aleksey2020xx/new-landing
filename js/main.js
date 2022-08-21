@@ -1,104 +1,79 @@
-
-
-// let swiperTwo = new Swiper('.swiper-container', {
-//   // direction: 'vertical',
-//   loop: true,
-//   slidesPerView: 4,
-//   loopedSlides: 4,
-//   spaceBetween: 30,
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // swiper
 
-  let swiperOne;
-  let swiperTwo;
-  let sliderMobile;
-  const width = 992
+  let swiperOne = null;
+  let swiperTwo = null;
 
-  const sliderOneDesctop = () => {
+  function resizeNewSlider (slides, space) {
     swiperOne = new Swiper('.preview__slider-one', {
       direction: 'vertical',
       loop: true,
-      loopedSlides: 4,
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: slides,
+      spaceBetween: space,
       observeSlideChildren: true,
+      simulateTouch: false,
+      allowTouchMove: false,
+      preventInteractionOnTransition: true,
       autoplay: {
         delay: 2000,
       },
       speed: 1000,
+      obeserver: true,
+      observerParents: true, 
     });
-  }
 
-  const sliderTwoDesctop = () => {
     swiperTwo = new Swiper('.preview__slider-two', {
       direction: 'vertical',
       loop: true,
-      // loopedSlides: 4,
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: slides,
+      spaceBetween: space,
       observeSlideChildren: true,
+      simulateTouch: false,
+      allowTouchMove: false,
+      preventInteractionOnTransition: true,
+      // noSwiping: true,
+      // noSwipingClass: 'swiper-slide',
       autoplay: {
         delay: 1000,
       },
       speed: 1000,
     });
   }
-  
-  const sliderInitMediaMobile = () => {
-    sliderMobile = new Swiper ('.preview__slider-three', {
-      loop: true,
-      // loopedSlides: 4,
-      slidesPerView: 4,
-      spaceBetween: 20,
-      observeSlideChildren: true,
-      autoplay: {
-        delay: 1000,
-      },
-      speed: 1000,
-    })
-  }
 
-  function resizeNewSlider () {
+  function checkWidth () {
+    if (window.innerWidth <= 992) {
+      if (swiperOne != null && swiperTwo != null) {
+        swiperOne.destroy()
+        swiperTwo.destroy()
+      }
 
-    console.log(window.innerWidth)
+      resizeNewSlider(3, 15)
+    } 
+    
+    if (window.innerWidth <= 560) {
+      if (swiperOne != null && swiperTwo != null) {
+        swiperOne.destroy()
+        swiperTwo.destroy()
+      }
 
-    if (window.innerWidth >= width) {
-      sliderMobile.destroy()
-      sliderOneDesctop()
-      sliderTwoDesctop()
+      resizeNewSlider(2, 0)
+    } 
 
-    } else {
-      swiperOne.destroy()
-      swiperTwo.destroy() 
-      sliderInitMediaMobile()
+    if (window.innerWidth >= 992) {
+      if (swiperOne != null && swiperTwo != null) {
+        swiperOne.destroy()
+        swiperTwo.destroy()
+      }
+      resizeNewSlider(4, 20)
     }
   }
 
-  window.addEventListener('resize', resizeNewSlider)
-  if (window.innerWidth <= width) {
-    swiperOne.destroy()
-    swiperTwo.destroy()
-    sliderInitMediaMobile() 
-  } 
-  sliderMobile.destroy()
-  sliderOneDesctop()
-  sliderTwoDesctop()
+  checkWidth()
 
-  // window.addEventListener('resize', () => {
-  //   if (window.matchMedia('(max-width: 1920px)').matches) {
-  //     let swiperOneMobile = new Swiper('.preview__slider-one', {
-  //       slidesPerView: 4,
-  //       autoplay: {
-  //         delay: 1000,
-  //       },
-  //       direction: 'horizontal',
-  //     })
-  //   }
-  // })
-
+  window.addEventListener('resize', () => {
+    checkWidth()
+  })
 
   // скрипт всплывающего окна
 
@@ -171,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const burgerBtn = document.createElement('a') 
   const span = document.createElement('span')
 
-  if (window.outerWidth <= 992) {
+  if (window.innerWidth <= 992) {
     headerNavLinks.classList.add('adaptive')
     // headerNav.setAttribute('style', 'display: none')
     headerNavBtns.forEach(el => {
@@ -184,9 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.header .container').append(burgerBtn)
 
-    burgerBtnElem(burgerBtn, headerNavLinks)
+    
   }
 
+  burgerBtnElem(burgerBtn, headerNavLinks)
+  // burgerBtnElem(burgerBtn, headerNavLinks)
   window.addEventListener('resize', () => {
     // if(window.matchMedia('(max-width: 992px)').matches) {
     //   headerNavLinks.classList.add('adaptive')
@@ -214,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
 
 
-    if (window.outerWidth <= 992) {
+    if (window.innerWidth <= 992) {
       headerNavLinks.classList.add('adaptive')
       // headerNav.setAttribute('style', 'display: none')
       headerNavBtns.forEach(el => {
@@ -227,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       document.querySelector('.header .container').append(burgerBtn)
   
-      burgerBtnElem(burgerBtn, headerNavLinks)
+      // burgerBtnElem(burgerBtn, headerNavLinks)
     } else {
         // headerNav.removeAttribute('style')
         headerNavLinks.classList.remove('active')
@@ -242,7 +219,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function burgerBtnElem (el, nav) {
     el.addEventListener('click', (e) => {
       e.preventDefault()
-      el.classList.toggle('active')
+      if (el.classList.contains('active') != true) {
+        el.classList.add('active')
+        console.log('add')
+      } else {
+        el.classList.remove('active')
+        console.log('remove')
+      }
       
 
       if(el.classList.contains('active') == true) {
