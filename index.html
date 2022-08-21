@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <!-- <script src="./js/slick.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src='./js/main.js'></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <img src="./img/logo.svg" alt="logo" class="header__logo">
+      <nav class="header__nav flex">
+        <ul class="header__list flex list">
+          <li class="header__item">
+            <a href="#" class="header__link link-btn">
+              Home
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link-btn">
+              About
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link-btn">
+              Pricing
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link link-btn">
+              Pages
+            </a>
+          </li>
+        </ul>
+        <button class="header__cart link-btn btn">Cart( 0)</button>
+        <button class="header__btn btn-app btn">Download app</button>
+        <button class="header__btn btn-register btn">Register</button>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="service offset-bottom">
+      <div class="service__top container flex">
+        <div class="service__content">
+          <div class="service__text">
+            <p class="service__sub-title sub-title">Food Delivery Service</p>
+            <h1 class="service__title">Delicious food at&nbsp;your fingertips</h1>
+            <p class="service__subscr subscr">A&nbsp;ultricies eget condimentum sed faucibus enim maecenas variusd dolor sitegestas hendrerit et&nbsp;maecenas habitant mattis</p>
+            <button class="service__btn btn-register btn">Register restaurant</button>
+            <button class="service__btn btn-app btn">Download app</button>
+          </div>
+          <ul class="service__list list flex">
+            <li class="service__item">
+              <h3 class="service__item-title">10M<span class="service__item-decr">+</span></h3>
+              <p class="service__item-subscr">Happy customers</p>
+            </li>
+
+            <li class="service__item">
+              <h3 class="service__item-title">500k<span class="service__item-decr">+</span></h3>
+              <p class="service__item-subscr">Restaurants available</p>
+            </li>
+
+            <li class="service__item">
+              <h3 class="service__item-title">30M<span class="service__item-decr">+</span></h3>
+              <p class="service__item-subscr">Successful deliveries</p>
+            </li>
+          </ul>
+        </div>
+        <img src="./img/service-img.png" alt="img" class="service__img">
+      </div>
+      
+      <div class="service__bottom container flex">
+        <p class="service__subscr subscr">
+          Trusted by&nbsp;5,000+ restaurants around the world
+        </p>
+        <ul class="service__list list__restaurant list flex">
+          <li class="service__icon"></li>
+          <li class="service__icon"></li>
+          <li class="service__icon"></li>
+          <li class="service__icon"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="works container flex offset-bottom">
+      <p class="works__sub-title sub-title">How it&nbsp;works</p>
+      <h2 class="works__title title">Our simple, yet efficient delivery system</h2>
+      <p class="works__subscr subscr">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu&nbsp;egestas morbi sem vulputate etiam facilisis pellentesque
+      </p>
+      <ul class="works__list list flex">
+        <li class="works__item card flex">
+          <img class="works__icon" src="./img/works-icon-1.svg" alt="icon">
+          <h3 class="works__title-item card__title">
+            1. Create a&nbsp;free account at&nbsp;Deliver X&nbsp;today
+          </h3>
+          <p class="works__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+          </p>
+        </li>
+        <li class="works__item card flex">
+          <img class="works__icon" src="./img/works-icon-2.svg" alt="icon">
+          <h3 class="works__title-item card__title">
+            2. Order from your favorite restaurant
+          </h3>
+          <p class="works__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+          </p>
+        </li>
+        <li class="works__item card flex">
+          <img class="works__icon" src="./img/works-icon-3.svg" alt="icon">
+          <h3 class="works__title-item card__title">
+            3. Receive right in&nbsp;your house, hassle-free
+          </h3>
+          <p class="works__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+          </p>
+        </li>
+      </ul>
+      <div class="works__buttons flex">
+        <button class="works__btn btn btn-register">Register restaurant</button>
+        <button class="works__btn btn btn-app">Download app</button>
+      </div>
+    </section>
+    <section class="advantage container flex offset-bottom">
+      <div class="advantage__top flex">
+        <div class="advantage__left">
+          <h2 class="advantage__title title">
+            Learn why Deliver X&nbsp;is great for your restaurant
+          </h2>
+          <p class="advantage__subscr subscr">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+          </p>
+          <ul class="advantage__list list flex">
+            <li class="advantage__item">
+              <div class="advantage__icon"></div>
+              <h3 class="advantage__title-item">
+                Fast deliveries
+              </h3>
+              <p class="advantage__text-item">
+                Lorem ipsum dolor sit amet consecte
+              </p>
+            </li>
+            <li class="advantage__item">
+              <div class="advantage__icon"></div>
+              <h3 class="advantage__title-item">
+                Certified riders
+              </h3>
+              <p class="advantage__text-item">
+                Lorem ipsum dolor sit amet consecte
+              </p>
+            </li>
+            <li class="advantage__item">
+              <div class="advantage__icon"></div>
+              <h3 class="advantage__title-item">
+                Instant payments
+              </h3>
+              <p class="advantage__text-item">
+                Lorem ipsum dolor sit amet consecte
+              </p>
+            </li>
+            <li class="advantage__item">
+              <div class="advantage__icon"></div>
+              <h3 class="advantage__title-item">
+                Low fees
+              </h3>
+              <p class="advantage__text-item">
+                Lorem ipsum dolor sit amet consecte
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantage__right">
+          <img src="./img/advantage-img.jpg" alt="img" class="advantage__img">
+        </div>
+      </div>
+      <div class="advantage__bottom flex">
+        <button class="advantage__btn btn btn-register">Register restaurant</button>
+        <button class="advantage__btn btn btn-app">Download app</button>
+      </div>
+    </section>
+    <section class="preview flex offset-bottom">
+      <div class="preview__left container flex">
+        <h2 class="preview__title title">
+          A&nbsp;delicious burger is&nbsp;one tap away!
+        </h2>
+        <p class="preview__subscr subscr">
+          Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam
+        </p>
+        <button class="preview__btn btn btn-register">
+          Download app
+        </button>
+      </div>
+
+      <div class="preview__slider-one">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/slide-1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="preview__slider-two">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/slide-3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-4.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/slide-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="preview__slider-three">
+        <div class="preview__slide">
+          <img src="./img/slide-1.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-2.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-3.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-4.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-1.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-2.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-3.jpg" alt="">
+        </div>
+        <div class="preview__slide">
+          <img src="./img/slide-4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="features flex offset-bottom container">
+      <p class="features__sub-title sub-title">
+        Our Features
+      </p>
+      <h2 class="features__title title">
+        Learn why Deliver is&nbsp;great for customers too!
+      </h2>
+      <p class="features__subscr subscr">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu&nbsp;egestas morbi sem vulputate etiam facilisis pellentesque
+      </p>
+      <ul class="features__list list flex">
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            Express delivery
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            Safely delivered
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            Special discounts
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            More dishes
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            Exclusive restaurants
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+        <li class="features__item card flex">
+          <div class="features__icon"></div>
+          <h3 class="features__item-title card__title">
+            and much more!
+          </h3>
+          <p class="features__text card__text">
+            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.
+          </p>
+        </li>
+      </ul>
+      <div class="features__btns flex">
+        <button class="features__btn btn btn-register">
+          Register restaurant
+        </button>
+        <button class="features__btn btn btn-app">
+          Download app
+        </button>
+      </div>
+    </section>
+    <section class="menagement container offset-bottom">
+      <div class="menagement__top flex">
+        <img src="./img/menagement-img.jpg" alt="img" class="menagement__img menagement__img-left">
+        <div class="menagement__content">
+          <h2 class="menagement__title title">
+            Hassle-free restaurant management
+          </h2>
+          <p class="menagement__text card__text">
+            Bibendum consectetur eu&nbsp;quis dignissim purus quis felis urna in&nbsp;enim elementum tellus amet ullamcorper ante in&nbsp;sollicitudin sollicitudin pellentesque porttitor ornare.
+          </p>
+          <div class="menagement__item flex">
+            <div class="menagement__icon"></div>
+            <div class="menagement__paragraph">
+              <h4 class="menagement__item-title title">
+                Order management
+              </h4>
+              <p class="menagement__subscr subscr">
+                Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit lectusa.
+              </p>
+            </div>
+          </div>
+          <div class="menagement__item flex">
+            <div class="menagement__icon"></div>
+            <div class="menagement__paragraph">
+              <h4 class="menagement__item-title title">
+                POS integration
+              </h4>
+              <p class="menagement__subscr subscr">
+                Lobortis elementum nibh tellus molestie nunc nonolfu celerisque fermentum dui faucibus inomle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menagement__bottom flex">
+        <div class="menagement__content">
+          <h2 class="menagement__title title">
+            Super convenient for customers too
+          </h2>
+          <p class="menagement__text card__text">
+            Bibendum consectetur eu&nbsp;quis dignissim purus quis felis urna in&nbsp;enim elementum tellus amet ullamcorper ante in&nbsp;sollicitudin sollicitudin pellentesque porttitor ornare.
+          </p>
+          <div class="menagement__item flex">
+            <div class="menagement__icon"></div>
+            <div class="menagement__paragraph">
+              <h4 class="menagement__item-title title">
+                Order from app
+              </h4>
+              <p class="menagement__subscr subscr">
+                Aliquam vestibulum morbi blandit cursus risus atomol ultrices proin gravida hendrerit lectusa.
+              </p>
+            </div>
+          </div>
+          <div class="menagement__item flex">
+            <div class="menagement__icon"></div>
+            <div class="menagement__paragraph">
+              <h4 class="menagement__item-title title">
+                Delivery tracking
+              </h4>
+              <p class="menagement__subscr subscr">
+                Lobortis elementum nibh tellus molestie nunc nonolfu celerisque fermentum dui faucibus inomle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./img/menagement-img-2.jpg" alt="img" class="menagement__img menagement__img-right">
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <h2 class="clients__title title">
+          What our clients say
+        </h2>
+        <div class="clients__content flex">
+          <p class="clients__subscr subscr">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac
+          </p>
+          <div class="clients__btns flex">
+            <button class="clients__btn btn btn-register">
+              Register restaurant
+            </button>
+            <button class="clients__btn btn btn-app">
+              Download app
+            </button>
+          </div>
+        </div>
+        <ul class="clients__list list flex">
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-1.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  John Carter
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Echo Park
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-2.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  Sophie Moore
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Hollywood Hills
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-3.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  Matt Cannon
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Little Tokyo
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-4.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  Lily Woods
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Melsore Avenue
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-5.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  Andy Smith
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Koreatown
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+          <li class="clients__item">
+            <div class="clients__preview flex">
+              <img class="clients__photo" src="./img/clients-photo-6.jpg" alt="photo">
+              <div class="clients__info">
+                <h4 class="clients__item-title">
+                  Emily Williams
+                </h4>
+                <p class="clients__sub-title sub-title">
+                  Chinatown
+                </p>
+              </div>
+            </div>
+            <p class="clients__comment card__text">
+              Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a&nbsp;nunc mauris scelerisque
+            </p>
+            <div class="clients__decor"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="app">
+      <div class="app__top">
+        <div class="container flex">
+          <div class="app__content">
+            <h2 class="app__title title">
+              Start attracting more clients today!
+            </h2>
+            <p class="app__subscr subscr">
+              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+            </p>
+            <button class="app__btn btn btn-register">
+              Register restaurant
+            </button>
+          </div>
+          <img class="app__img" src="./img/app-img.png" alt="img">
+        </div>
+      </div>
+      <div class="app__bottom container flex">
+        <div class="app__text">
+          <img class="app__logo" src="./img/logo.svg" alt="logo">
+          <p class="app__text-subscr subscr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do&nbsp;eiusmod tempor incididunt&nbsp;ut.
+          </p>
+        </div>
+        <div class="app__btns">
+          <button class="app__btn btn btn-register">
+            Download for iOS
+          </button>
+          <button class="app__btn btn btn-register">
+            Download for Android
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container flex">
+    <div class="footer__item">
+      <h3 class="footer__title title">
+        Menu
+      </h3>
+      <div class="footer__lists flex">
+        <ul class="footer__list list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Home
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              About
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Contact
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Blog
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Blog posts
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list list">
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Plans
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Plan single
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#" class="footer__link card__text">
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__title title">
+        Utility pages
+      </h3>
+      <ul class="footer__list list">
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            Start here
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            Styleguide
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            Password protected
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            404 Not found
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            Licenses
+          </a>
+        </li>
+        <li class="footer__list-item">
+          <a href="#" class="footer__link card__text">
+            Changelog
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__title title">
+        Available&nbsp;in
+      </h3>
+      <ul class="footer__list list flex">
+        <li class="footer__list-item flex">
+          <div class="footer__icon"></div>
+          <div class="footer__text card__text">
+            San Francisco, CA
+          </div>
+        </li>
+        <li class="footer__list-item flex">
+          <div class="footer__icon"></div>
+          <div class="footer__text card__text">
+            Los Angeles, CA
+          </div>
+        </li>
+        <li class="footer__list-item flex">
+          <div class="footer__icon"></div>
+          <div class="footer__text card__text">
+            New York, NY
+          </div>
+        </li>
+        <li class="footer__list-item flex">
+          <div class="footer__icon"></div>
+          <div class="footer__text card__text">
+            Seattle, WA
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div class="sub-footer">
+    <p class="sub-footer__text card__text">
+      Copyright &copy;&nbsp;Deliver X&nbsp;| Designed by&nbsp;<span class="sub-title">BRIX Templates</span>&nbsp;&mdash; Powered by&nbsp;<span class="sub-title">Webflow</span>
+    </p>
+  </div>
+  <div class="popup flex">
+    <form class="popup__form flex" action="#">
+      <label class="popup__label flex" for="name">
+        <input class="popup__input" id="name" type="text" placeholder="Name">
+        <span class="card__text">Name</span>
+      </label>
+      <label class="popup__label flex" for="tel">
+        <input class="popup__input" id="tel" type="tel" placeholder="Phone">
+        <span class="card__text">Phone</span>
+      </label>
+      <label class="popup__label flex" for="password">
+        <input class="popup__input" id="password" type="password" placeholder="Password">
+        <span class="card__text">Password</span>
+      </label>
+      <button class="popup__btn btn btn-register">OK</button>
+      <button class="popup__closed btn">&#10005;</button>
+    </form>
+  </div>
+</body>
+</html>
